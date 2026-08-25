@@ -1,0 +1,8 @@
+[
+  {
+    "id": "stock-exchanges",
+    "name": "Stock Exchange Metadata",
+    "status": "scaffold",
+    "source": "BSE/NSE public"
+  }
+]
