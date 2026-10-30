@@ -1,0 +1,55 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Stock Exchange Metadata",
+    "description": "Indian stock exchanges (BSE, NSE) with indices and segment info",
+    "version": "1.0.0",
+    "license": {
+      "name": "CC-BY-4.0"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://chirag127.github.io/stock-exchanges",
+      "description": "GitHub Pages"
+    }
+  ],
+  "paths": {
+    "/data.json": {
+      "get": {
+        "summary": "Stock Exchange Metadata data",
+        "description": "Indian stock exchanges (BSE, NSE) with indices and segment info",
+        "responses": {
+          "200": {
+            "description": "JSON response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/exchanges": {
+      "get": {
+        "summary": "Stock Exchange Metadata",
+        "description": "Indian stock exchanges (BSE, NSE) with indices and segment info",
+        "responses": {
+          "200": {
+            "description": "JSON response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

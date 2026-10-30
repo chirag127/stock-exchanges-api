@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://chirag127.github.io/stock-exchanges/data/schema.json",
+  "title": "Stock Exchange Metadata",
+  "description": "Indian stock exchanges (BSE, NSE) with indices and segment info",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "id",
+      "name"
+    ],
+    "properties": {
+      "id": {
+        "type": "string",
+        "description": "Unique identifier"
+      },
+      "name": {
+        "type": "string",
+        "description": "Display name"
+      }
+    }
+  }
+}
